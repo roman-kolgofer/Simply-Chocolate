@@ -1,0 +1,250 @@
+.subscribe {
+  height: 370px;
+  background-image: url("/img/Subcribe-desk.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .subscribe {
+    background-image: url("/img/Subcribe-desk@2x.jpg");
+  }
+}
+
+.subscribe .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  width: 335px;
+}
+
+.subscribe-title {
+  color: var(--white);
+  font-weight: var(--font-weight-hh);
+  font-size: var(--font-size-h);
+  line-height: var(--line-height-h);
+  letter-spacing: var(--letter-spacing-h);
+  text-align: center;
+  width: 291px;
+  margin-top: 62px;
+}
+
+.subscribe-form-input:hover {
+  border: 1.5px solid var(--orange);
+}
+
+.subscribe-form-button:hover {
+  background-color: #fcf1e0;
+  color: var(--orange);
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .subscribe-title {
+    margin-top: 72px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .subscribe-title {
+    margin-top: 72px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.subscribe-text {
+  color: var(--white);
+  font-weight: var(--font-weight-p);
+  font-size: var(--font-size-pp);
+  line-height: var(--line-height-h);
+  letter-spacing: var(--letter-spacing-h);
+  text-align: center;
+
+  width: 326px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .subscribe-text {
+    width: 467px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .subscribe-text {
+    width: 467px;
+  }
+}
+
+.subscribe-button {
+  background-color: var(--orange);
+  color: var(--white);
+
+  padding: 12px 28px;
+  border-radius: 100px;
+  border: none;
+  font-weight: var(--font-weight-hh);
+  font-size: var(--font-size-pp);
+  line-height: var(--font-size-p);
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: var(--beige);
+  color: var(--orange);
+}
+
+@media (min-width: 768px) {
+  .subscribe-button {
+    padding: 14px 40px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+/* Modal */
+.subscribe-modal {
+  background-color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 311px;
+  height: 350px;
+  border-radius: 15px;
+  transform: translate(-50%, -50%);
+
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .subscribe-modal {
+    width: 538px;
+    height: 412px;
+  }
+}
+
+.subscribe-overlay {
+  opacity: 1;
+  visibility: visible;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+}
+
+.subscribe-overlay.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.subscribe-modal-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 24px;
+  right: 24px;
+  width: 30px;
+  height: 30px;
+  stroke: var(--white);
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.subscribe-modal-icon:hover {
+  background-color: var(--orange);
+}
+
+.subscribe-modal-title {
+  font-weight: var(--font-weight-hh);
+  font-size: var(--font-size-h);
+  line-height: var(--line-height-h);
+  letter-spacing: var(--letter-spacing-h);
+  text-transform: uppercase;
+
+  padding: 32px 24px 24px 24px;
+}
+
+@media (min-width: 768px) {
+  .subscribe-modal-title {
+    font-size: var(--font-size-hh);
+    line-height: var(--line-height-p);
+    padding: 40px 40px 28px 40px;
+  }
+}
+
+.subscribe-form-block {
+  display: flex;
+  padding-left: 24px;
+}
+
+@media (min-width: 768px) {
+  .subscribe-form-block {
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .subscribe-form {
+    position: relative;
+  }
+}
+
+.subscribe-form-input {
+  padding: 14px 18px;
+  width: 263px;
+  height: 45px;
+
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 30px;
+  font-size: var(--font-size-pp);
+}
+
+@media (min-width: 768px) {
+  .subscribe-form-input {
+    width: 313px;
+    height: 52px;
+    font-size: 18px;
+    line-height: 22px;
+
+    padding: 14px 24px;
+    margin-right: 8px;
+  }
+}
+
+.subscribe-form-button {
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: 100px;
+
+  font-weight: var(--font-weight-hh);
+  font-size: var(--font-size-pp);
+  line-height: var(--line-height-h);
+  padding: 14px 22px;
+}
+
+@media (max-width: 767px) {
+  .subscribe-form-button {
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .subscribe-form-button {
+    padding: 17px 42px;
+  }
+}

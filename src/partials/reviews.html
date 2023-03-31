@@ -1,0 +1,206 @@
+<section class="reviews" id="chocolate-is-loved">
+  <div class="container">
+    <h2 class="reviews-title">
+      <span class="highlight">Chocolate</span> is loved
+    </h2>
+    <div class="swiper">
+      <ul class="swiper-wrapper reviews-list">
+        <li class="swiper-slide">
+          <div class="reviews-item">
+            <img
+              class="reviews-img"
+              srcset="/img/reviews-1.png 1x, /img/reviews-1@2x.png 2x"
+              src="/img/reviews-1.png"
+              width="80"
+              alt="Victoria Dobrzhanska"
+            />
+            <h3 class="reviews-name">Victoria Dobrzhanska</h3>
+            <p class="reviews-text">
+              I love this chocolate bar. Perfect combination of light crispy
+              wafer, covered in a thin layer chocolate.
+            </p>
+          </div>
+        </li>
+
+        <li class="swiper-slide">
+          <div class="reviews-item">
+            <img
+              class="reviews-img"
+              srcset="/img/reviews-2.png 1x, /img/reviews-2@2x.png 2x"
+              src="/img/reviews-2.png"
+              width="80"
+              alt="Nazar Babenko"
+            />
+            <h3 class="reviews-name">Nazar Babenko</h3>
+            <p class="reviews-text">
+              This chocolate confection is a delight! A delight! The wafer is
+              light and crisp, the hazelnut cream is smooth, and the chocolate
+              is good.
+            </p>
+          </div>
+        </li>
+
+        <li class="swiper-slide">
+          <div class="reviews-item">
+            <img
+              class="reviews-img"
+              srcset="/img/reviews-3.png 1x, /img/reviews-3@2x.png 2x"
+              src="/img/reviews-3.png"
+              width="80"
+              alt="Olena Kampusch"
+            />
+            <h3 class="reviews-name">Olena Kampusch</h3>
+            <p class="reviews-text">
+              Chocolate is a family favourite treat. Love the delicious smooth
+              chocolate and the creaminess inside. The wafer is soft but
+              crunchy.
+            </p>
+          </div>
+        </li>
+
+        <li class="swiper-slide">
+          <div class="reviews-item">
+            <img
+              class="reviews-img"
+              srcset="/img/reviews-4.png 1x, /img/reviews-4@2x.png 2x"
+              src="/img/reviews-4.png"
+              width="80"
+              alt="Natalia Sus"
+            />
+            <h3 class="reviews-name">Natalia Sus</h3>
+            <p class="reviews-text">
+              The chocolate assortment was delicious. Both dark and milk
+              chocolate pieces were smooth and just right on the sweetness
+              level.
+            </p>
+          </div>
+        </li>
+
+        <li class="swiper-slide">
+          <div class="reviews-item">
+            <img
+              class="reviews-img"
+              srcset="/img/reviews-5.png 1x, /img/reviews-5@2x.png 2x"
+              src="/img/reviews-5.png"
+              width="80"
+              alt="Danilo Nottingham"
+            />
+            <h3 class="reviews-name">Danilo Nottingham</h3>
+            <p class="reviews-text">
+              This is delicious. It so rich and flavorful you don’t need to use
+              as many. I love topping an apple with almond butter and these
+              chips for a snack.
+            </p>
+          </div>
+        </li>
+
+        <li class="swiper-slide">
+          <div class="reviews-item">
+            <img
+              class="reviews-img"
+              srcset="/img/reviews-6.png 1x, /img/reviews-6@2x.png 2x"
+              src="/img/reviews-6.png"
+              width="80"
+              alt="Irina Tydnyuk"
+            />
+            <h3 class="reviews-name">Irina Tydnyuk</h3>
+            <p class="reviews-text">
+              This is simply the best chocolate around, and I'm just thrilled to
+              support a local company! Best local chocolate - world class :)
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <button class="js-open-modal reviews-button" type="button" data-modal="1">
+      Leave a review
+    </button>
+  </div>
+</section>
+
+<div class="modal modal-reviews" data-modal="1">
+  <button class="modal-close js-modal-close" type="button">
+    <svg class="modal-icon">
+      <use href="/img/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+
+  <h2 class="modal-title">
+    <span class="modal-title-mobile">Leave a review</span> about
+    <span class="highlight">our chocolate</span>
+  </h2>
+
+  <form class="review-form" name="review-form">
+    <div class="form-group" role="group">
+      <div class="review-form-field">
+        <input
+          class="review-form-input"
+          type="text"
+          name="review-name"
+          placeholder="Name"
+          required
+        />
+      </div>
+
+      <div class="review-form-field">
+        <input
+          class="review-form-input"
+          type="email"
+          name="review-email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+
+      <div class="review-form-field">
+        <input
+          class="review-form-input"
+          type="tel"
+          name="review-phone"
+          id="label-review-phone"
+          placeholder="Phone number"
+          pattern="\+380[0-9]{9}"
+          required
+        />
+        <label class="label-review-phone" for="label-review-phone">
+          <svg class="flag-icon">
+            <use href="/img/icons.svg#icon-prapor"></use>
+          </svg>
+          <span class="label-text">+380</span>
+        </label>
+      </div>
+
+      <div class="review-form-field">
+        <textarea
+          class="review-form-input textarea"
+          name="review-text"
+          placeholder="Enter text"
+          required
+        ></textarea>
+      </div>
+    </div>
+
+    <button
+      class="review-button js-open-modal js-modal-close"
+      type="submit"
+      data-modal="2"
+    >
+      Send
+    </button>
+  </form>
+</div>
+
+<div class="modal modal-gratitude" data-modal="2">
+  <button class="js-modal-close modal-close" type="button">
+    <svg class="modal-icon">
+      <use href="/img/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h2 class="modal-title">Thank you<br />For your feedback!</h2>
+  <p class="modal-text">We are so happy to hear from you!</p>
+</div>
+
+<div class="overlay js-overlay-modal"></div>

@@ -1,0 +1,175 @@
+.recipe {
+  padding-bottom: 72px;
+}
+
+@media (min-width: 768px) {
+  .recipe {
+    padding-bottom: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .recipe {
+    padding-bottom: 128px;
+  }
+}
+
+.title-accent {
+  color: var(--orange);
+}
+
+.recipe-title {
+  margin-bottom: 32px;
+  font-weight: var(--font-weight-hh);
+  font-size: var(--font-size-h);
+  line-height: var(--line-height-h);
+  letter-spacing: var(--letter-spacing-h);
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--black);
+}
+
+@media (min-width: 768px) {
+  .recipe-title {
+    margin-bottom: 50px;
+    font-size: var(--font-size-hh);
+  }
+}
+
+.video {
+  position: relative;
+
+  max-width: 335px;
+  height: 500px;
+
+  margin-bottom: 20px;
+
+  background-image: url(/img/play.svg), url(/img/how-it-is-made-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-radius: 15px;
+}
+
+.video:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .video {
+    max-width: 614px;
+    height: 400px;
+
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: url(/img/play.svg), url(/img/how-it-is-made-tab.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .video {
+    width: 600px;
+
+    margin-bottom: 0;
+
+    background-image: url(/img/play.svg), url(/img/how-it-is-made-desk.jpg);
+  }
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  border: 0;
+  border-radius: 15px;
+}
+
+.recipe-containt-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1200px) {
+  .recipe-containt-container {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+.receipe-text-container {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 14px;
+  padding-right: 14px;
+
+  background-color: var(--white);
+  border-radius: 15px;
+}
+
+@media (min-width: 768px) {
+  .receipe-text-container {
+    width: 614px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+    padding-right: 102px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .receipe-text-container {
+    width: 516px;
+    height: 400px;
+    padding-right: 59px;
+  }
+}
+
+.recipe-text {
+  margin-bottom: 20px;
+
+  font-weight: var(--font-weight-hh);
+  font-size: var(--font-size-ppp);
+  line-height: var(--line-height-hh);
+  letter-spacing: var(--letter-spacing-p);
+
+  color: var(--black);
+}
+
+@media (min-width: 768px) {
+  .recipe-text {
+    margin-bottom: 28px;
+  }
+}
+
+.recipe-list {
+  list-style-type: disc;
+  padding-left: 0.75rem;
+  list-style-image: url(/img/marker.svg);
+}
+
+.recipe-item:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+@media (min-width: 1200px) {
+  .recipe-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+.recipe-item-text {
+  font-weight: var(--font-weight-p);
+  font-size: var(--font-size-pp);
+  line-height: var(--line-height-hh);
+  letter-spacing: var(--letter-spacing-p);
+  color: var(--black);
+}

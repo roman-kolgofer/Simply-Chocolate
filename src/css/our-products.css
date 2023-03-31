@@ -1,0 +1,109 @@
+.products {
+  padding-bottom: 72px;
+  color: var(--black);
+  text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .products {
+    padding-bottom: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .products {
+    padding-bottom: 128px;
+  }
+}
+
+.products-title {
+  font-size: var(--font-size-hh);
+  font-weight: var(--font-weight-hh);
+  line-height: var(--line-height-h);
+  letter-spacing: var(--letter-spacing-h);
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .products-title {
+    margin-bottom: 50px;
+  }
+}
+
+.highlight {
+  color: var(--orange);
+}
+
+.products-item {
+  padding: 32px 20px;
+  background-color: var(--white);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+}
+
+.products-img {
+  margin-bottom: 8px;
+  margin: 0 auto;
+}
+
+.products-name {
+  margin-bottom: 2px;
+  font-size: var(--font-size-ppp);
+  font-weight: var(--font-weight-hh);
+  line-height: var(--line-height-hh);
+  letter-spacing: var(--letter-spacing-p);
+  text-transform: uppercase;
+}
+
+.products-text {
+  margin-bottom: 18px;
+  font-size: var(--font-size-p);
+  line-height: var(--line-height-h);
+  letter-spacing: var(--letter-spacing-p);
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.products-price {
+  font-size: var(--font-size-pp);
+  font-weight: var(--font-weight-hh);
+  line-height: var(--line-height-h);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background-color: var(--background);
+  border-radius: 100px;
+  padding: 8px 20px;
+}
+
+.products-list {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .products-list {
+    margin-bottom: 32px;
+  }
+}
+
+.swiper-pagination {
+  position: static;
+}
+
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  background-color: rgba(17, 17, 17, 0.5);
+  --swiper-pagination-bullet-horizontal-gap: 6.5px;
+}
+
+@media (max-width: 260px) {
+  .swiper-pagination-bullet {
+    --swiper-pagination-bullet-horizontal-gap: 3px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  width: 28px;
+  height: 13px;
+  background-color: var(--orange);
+  border-radius: 32px;
+}
